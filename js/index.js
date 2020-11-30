@@ -88,20 +88,20 @@ const view = {
 
   registerStickyBar: () => {
     const menuBar = document.querySelector("#menu-bar");
+    const smallProfile = document.querySelector(".small-user");
 
     window.onscroll = () => {
       if (
-        // document.body.scrollTop > 350 ||
         document.documentElement.scrollTop > 150
       ) {
         menuBar.classList.add("fixed-full");
-        // document.getElementById("subprofile").style.visibility = "visible"
+        smallProfile.classList.add("fixed");
+        smallProfile.classList.remove("d-none");
       } else if (
-        // document.body.scrollTop < 350 ||
         document.documentElement.scrollTop < 150
       ) {
-        // document.getElementById("subprofile").style.visibility = "hidden"
         menuBar.classList.remove("fixed-full");
+        smallProfile.classList.add("d-none");
       }
     };
   },
@@ -113,6 +113,9 @@ const view = {
     profileImage.id = "profileImage";
     profileImage.style.width = "260";
     profileImage.style.height = "260";
+
+    const smallProfileImage = document.querySelector("#smallProfileImage");
+    smallProfileImage.src = avatarUrl;
 
     const imageContainer = document.querySelector("#image-container");
     imageContainer.append(profileImage);

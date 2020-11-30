@@ -102,6 +102,12 @@ nav ul li {
   flex-direction: column;
 }
 
+#user-d {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
 #fullName {
   font-size: 26px;
   line-height: 1.25;
@@ -154,12 +160,12 @@ nav ul li {
 
 #menu-bar {
   display: grid;
-  /* width: 100%; */
   grid-template-columns: 3fr 9fr;
   border-bottom: 1px solid #24292d1e;
   background: white;
   opacity: 1 !important;
   z-index: 999;
+  margin-bottom: 1rem;
 }
 
 #menu {
@@ -167,7 +173,6 @@ nav ul li {
   /* width: 100%; */
   justify-content: flex-start;
   margin: 0 1rem;
-  margin-top: 1rem;
 }
 
 .menu__menu-item {
@@ -211,8 +216,9 @@ nav ul li {
   padding: 0 1rem;
   /* position: relative; */
   /* bottom: 3rem; */
-  z-index: 999;
-  margin-top: -3rem;
+  position: relative;
+  z-index: 9;
+  /* margin-top: -3rem; */
 }
 
 #repositories {
@@ -231,6 +237,7 @@ nav ul li {
   border: 1px solid #b4b4b4;
   border-radius: 5px;
 }
+
 .repositories__list--total {
   /* display: inline-block; */
   padding-bottom: 1rem;
@@ -295,7 +302,6 @@ nav ul li {
 }
 
 .repository__starbutton {
-  /* flex-grow: 1; */
   padding: 0 1rem;
 }
 
@@ -323,17 +329,41 @@ nav ul li {
 }
 
 aside > div {
-  z-index: 99;
+  z-index: -4;
 }
 
 #profileImage {
   border-radius: 50%;
   width: 100%;
-  /* position: absolute; */
+}
+
+#smallProfileImage {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.small-user {
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+  padding-left: 5rem;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-bottom: 1px solid #24292d1e;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.small-user > div {
+  display: flex;
+  align-items: center;
 }
 
 #image-container {
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .circlify {
@@ -355,10 +385,33 @@ aside > div {
     bottom: 0;
   }
 
+  #image-container {
+    width: 20%;
+    display: inline-block;
+  }
+
+  .small-user {
+    display: none !important;
+  }
+
   #user-d {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-column-gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  #image-container {
+    margin-right: 1rem;
+  }
+
+  #user-details {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #user-details > span {
+    display: block;
   }
 
   #user-details {
@@ -384,8 +437,4 @@ aside > div {
   #notifications {
     order: 3;
   }
-
-  /* #menu-bar {
-    display: none;
-  } */
 }

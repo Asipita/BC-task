@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/utilities.css" />
     <script src="./js/index.js" defer></script>
     <title>Document</title>
   </head>
@@ -33,7 +33,6 @@
         <ul id="nav-links">
           <li class="nav-item"><a href="">Pull requests</a></li>
           <li class="nav-item"><a href="">Issue</a></li>
-          <!-- <li class="nav-item"><a href="">Codespaces</a></li> -->
           <li class="nav-item"><a href="">Market place</a></li>
           <li class="nav-item"><a href="">Explore</a></li>
         </ul>
@@ -43,27 +42,6 @@
       </span>
     </nav>
     <main>
-      <section id="menu-bar">
-        <div></div>
-        <div id="menu">
-          <a class="menu__menu-item flex items-center">
-            <i class="ion-ios-book-outline mr-2 text-1-2"></i> Overview</a
-          >
-          <a
-            class="menu__menu-item menu__menu-item--selected flex items-center"
-          >
-            <i class="ion-ios-list-outline mr-2 text-1-2"></i>
-            Repositories
-          </a>
-          <a class="menu__menu-item flex items-center">
-            <i class="ion-clipboard mr-2 text-1-2"></i> Projects</a
-          >
-          <a class="menu__menu-item flex items-center">
-            <i class="ion-cube mr-2 text-1-2"></i>
-            Packages</a
-          >
-        </div>
-      </section>
       <section id="main-content">
         <aside>
           <div id="user-d">
@@ -73,7 +51,7 @@
               <span id="userName"></span>
             </div>
           </div>
-          <div class="bio"></div>
+          <div class="bio" st></div>
           <div class="user-meta">
             <div>
               <button class="edit-button">Edit profile</button>
@@ -92,8 +70,35 @@
             </div>
           </div>
           <div id="other-details"></div>
+          <div class="small-user d-none">
+            <div>
+              <img id="smallProfileImage" height="50px" src="" alt="" />
+              <b>Asipita</b>
+            </div>
+          </div>
         </aside>
         <div>
+          <section id="menu-bar">
+            <!-- <div></div> -->
+            <div id="menu">
+              <a class="menu__menu-item flex items-center">
+                <i class="ion-ios-book-outline mr-2 text-1-2"></i> Overview</a
+              >
+              <a
+                class="menu__menu-item menu__menu-item--selected flex items-center"
+              >
+                <i class="ion-ios-list-outline mr-2 text-1-2"></i>
+                Repositories
+              </a>
+              <a class="menu__menu-item flex items-center">
+                <i class="ion-clipboard mr-2 text-1-2"></i> Projects</a
+              >
+              <a class="menu__menu-item flex items-center">
+                <i class="ion-cube mr-2 text-1-2"></i>
+                Packages</a
+              >
+            </div>
+          </section>
           <section id="repositories">
             <div class="repositories__search">
               <input type="text" placeholder="Find a repository" />

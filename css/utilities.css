@@ -1,5 +1,9 @@
 /* utility classes */
 
+.d-none {
+  display: none;
+}
+
 .flex {
   display: flex;
 }
@@ -8,6 +12,10 @@
   position: fixed;
   width: 100%;
   top: 0;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .static {
