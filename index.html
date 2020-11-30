@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="./js/index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <a href="" class="nav-item" id="logo"
+        ><span class="ion-social-github" id="brand-logo"></span
+      ></a>
+      <span class="nav-icon" id="navicon">
+        <i class="ion-navicon-round"></i>
+      </span>
+      <div id="search-and-nav" class="flex items-center nav-item">
+        <div class="nav-item" id="search-box">
+          <input type="text" placeholder="Search and jump to..." />
+          <span id="search-control">/</span>
+        </div>
+        <ul id="nav-links">
+          <li class="nav-item"><a href="">Pull requests</a></li>
+          <li class="nav-item"><a href="">Issue</a></li>
+          <!-- <li class="nav-item"><a href="">Codespaces</a></li> -->
+          <li class="nav-item"><a href="">Market place</a></li>
+          <li class="nav-item"><a href="">Explore</a></li>
+        </ul>
+      </div>
+      <span class="nav-icon" id="notifications">
+        <i class="ion-android-notifications-none"></i>
+      </span>
+    </nav>
+    <main>
+      <section id="menu-bar">
+        <div></div>
+        <div id="menu">
+          <a class="menu__menu-item flex items-center">
+            <i class="ion-ios-book-outline mr-2 text-1-2"></i> Overview</a
+          >
+          <a
+            class="menu__menu-item menu__menu-item--selected flex items-center"
+          >
+            <i class="ion-ios-list-outline mr-2 text-1-2"></i>
+            Repositories
+          </a>
+          <a class="menu__menu-item flex items-center">
+            <i class="ion-clipboard mr-2 text-1-2"></i> Projects</a
+          >
+          <a class="menu__menu-item flex items-center">
+            <i class="ion-cube mr-2 text-1-2"></i>
+            Packages</a
+          >
+        </div>
+      </section>
+      <section id="main-content">
+        <aside>
+          <div id="user-d">
+            <div id="image-container"></div>
+            <div id="user-details">
+              <span id="fullName"></span>
+              <span id="userName"></span>
+            </div>
+          </div>
+          <div class="bio"></div>
+          <div class="user-meta">
+            <div>
+              <button class="edit-button">Edit profile</button>
+            </div>
+
+            <div class="following">
+              <span class="hover-blue"
+                ><i class="ion-person-stalker mr-1"></i>3 followers
+              </span>
+              &middot;
+              <span class="hover-blue mr-1">6 following</span>
+              &middot;
+              <span class="hover-blue"
+                ><i class="ion-android-star-outline mr-1"></i>9</span
+              >
+            </div>
+          </div>
+          <div id="other-details"></div>
+        </aside>
+        <div>
+          <section id="repositories">
+            <div class="repositories__search">
+              <input type="text" placeholder="Find a repository" />
+            </div>
+            <div class="repositories__list">
+              <p class="repositories__list--total">
+                <b id="repositoriesCount"></b> results for
+                <b> public </b> repositories
+              </p>
+              <div class="repositories__collection">
+                <!-- z -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <footer></footer>
+    </main>
+  </body>
+</html>
