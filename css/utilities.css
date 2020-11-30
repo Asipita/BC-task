@@ -1,0 +1,56 @@
+/* utility classes */
+
+.flex {
+  display: flex;
+}
+
+.fixed-full {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.static {
+  position: static;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.hover-blue:hover {
+  color: #0366d6;
+  cursor: pointer;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.mr-1 {
+  margin-right: 5px;
+}
+.mr-2 {
+  margin-right: 10px;
+}
+.mr-5 {
+  margin-right: 25px;
+}
+
+.my-1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.text-1 {
+  font-size: 1rem;
+}
+.text-1-2 {
+  font-size: 1.2rem;
+}
+.text-1-5 {
+  font-size: 1.5rem;
+}
+/* utiliy classes */
